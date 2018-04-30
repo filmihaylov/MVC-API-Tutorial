@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Select User</h1>
+<select id="SelectUser" class="form-control">
+    <option value="" disabled="disabled" selected="selected">Please select a name</option>
+</select>
+<ul id="OrderList" class="list-group">
+
+</ul>
+
+
+@section Scripts {
+    <script src="@Url.Content("~/Scripts/PopulateUserOrders.js")"></script>
+}

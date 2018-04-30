@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+
+        <legend>Set the name of the user</legend>
+        User Name:<br>
+        <input type="text" id="userName" class="form-control"><br>
+<legend>Set the Name of the order</legend>
+        Order Name<br>
+        <input type="text" id="orderName" class="form-control" ><br><br>
+        <input type="button" value="Create" id="submitNameOrder" class="btn-danger">
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="@Url.Content("~/Scripts/AddUserOrder.js")"></script>
+}
